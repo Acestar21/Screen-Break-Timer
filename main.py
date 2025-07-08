@@ -8,11 +8,11 @@ def show_pop_up():
     root.after(2000 , root.destroy)
     root.mainloop()
 
-
-while True:
-    print("Work time... (5 seconds)")
-    time.sleep(5)
-    print("LOOK AWAY! (2 seconds)")
-    show_pop_up()
+def start_break_timer():
+    while True:
+        print("Work time... (5 seconds)")
+        time.sleep(5)
+        print("LOOK AWAY! (2 seconds)")
+        show_pop_up()
     
 
