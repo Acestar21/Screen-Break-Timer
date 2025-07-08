@@ -1,6 +1,6 @@
 import threading
 from tkinter import *
-from main import start_break_timer , stop_timer
+from screen_break_timer import start_break_timer , stop_timer
 def menu():
     root = Tk()
     root.title("menu")
