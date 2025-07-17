@@ -1,5 +1,7 @@
 import threading
 from tkinter import *
+from screen_monitor import launch_monitor  
+
 from screen_break_timer import start_break_timer , stop_timer
 def menu():
     root = Tk()
@@ -13,7 +15,7 @@ def menu():
 
     btn_1 = Button(root, text= "Screen timer", command=screen_timer)
     btn_2 = Button(root, text= "Pomodoro timer")
-    btn_3 = Button(root, text= "Screen monitor")
+    btn_3 = Button(root, text="Screen Monitor", command=launch_monitor)
     btn_4 = Button(root, text= "Sound")
     btn_stop = Button(root , text= "stop" , command=stop_timer)
     btn_1.pack(pady=10)
