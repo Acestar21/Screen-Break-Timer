@@ -14,6 +14,7 @@ from datetime import date
 
 total_usage = {}    # Holds data loaded from JSON (all previous runs)
 session_usage = {}  # Holds only this session's new data
+# ignored = {""}
 
 last_title = [None]
 last_switch_time = [time.time()]
@@ -33,7 +34,7 @@ def load_today_usage():
 def save_today_usage(session_usage):
     global total_usage
     today = date.today().isoformat()
-    file_path = f"data/app_usage_{today}.json"
+    file_path = f"Screen Care App/data/app_usage_{today}.json"
     if not os.path.exists("data"):
         os.makedirs("data")
 
