@@ -87,8 +87,8 @@ def load_today_usage():
 def save_today_usage(total_usage, session_usage):
     today = date.today().isoformat()
     file_path = f"Screen Care App/data/app_usage_{today}.json"
-    if not os.path.exists("data"):
-        os.makedirs("data")
+    # if not os.path.exists("data"):
+    #     os.makedirs("data")
 
     combined = total_usage.copy()
     for app, seconds in session_usage.items():
